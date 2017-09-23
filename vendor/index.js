@@ -24,8 +24,8 @@ $(document).ready(function () {
 
 		var imageList = new SsImageList(data[data_index].images, "./datas/", true);
 		var animation = new SsAnimation(data[data_index].animation, imageList);
-		screen_width = 1280;
-		screen_height = 720;
+		screen_width = a_canvas.width;
+		screen_height = a_canvas.height;
 
 		var sp1 = new SsSprite(animation);
 		//位置の設定
