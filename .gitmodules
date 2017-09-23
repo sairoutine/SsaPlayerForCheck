@@ -1,0 +1,3 @@
+[submodule "fork/SsaPlayer"]
+	path = fork/SsaPlayer
+	url = git@github.com:sairoutine/SsaPlayer.git
