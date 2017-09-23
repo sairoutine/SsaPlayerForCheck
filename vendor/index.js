@@ -1,5 +1,4 @@
 /* global $, SsImageList, SsAnimation, SsSprite */
-
 'use strict';
 var screen_width = 0;
 var screen_height = 0;
@@ -36,7 +35,7 @@ $(document).ready(function () {
 		sp1.rootScaleX = 1.0;
 		sp1.rootScaleY = 1.0;
 		//アニメーションの再生速度を設定
-//		sp1.setStep(2.0);
+		//sp1.setStep(2.0);
 
 		sprite = sp1;
 
@@ -64,15 +63,15 @@ $(document).ready(function () {
 			ctx.moveTo( 0 , screen_height/2 );
 			ctx.lineTo( screen_width,  screen_height/2);
 			ctx.stroke();
-				
+
 			//再生フレーム、再生中のアニメ名称、ループカウントの表示
-			
+
 			document.getElementById("dScreen2").innerHTML= "[" + data_index + "]" + data[data_index].name + "<br>" + sprite.getFrameNo() + "<br>loop count = " + sprite.getLoopCount();
 
 			//document.getElementById("dScreen2").innerHTML+= "<br>x = " + (sprite.x - w/2);
 			//document.getElementById("dScreen2").innerHTML+= "<br>y = " + (sprite.y - h/2);
-			document.getElementById("dScreen2").innerHTML+= "<br>x = " + (sprite.x);
-			document.getElementById("dScreen2").innerHTML+= "<br>y = " + (sprite.y);
+			document.getElementById("dScreen2").innerHTML+= "<br>x = " + sprite.x;
+			document.getElementById("dScreen2").innerHTML+= "<br>y = " + sprite.y;
 
 		}, 30);
 
