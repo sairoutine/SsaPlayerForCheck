@@ -2,10 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html" />
-	<script type="text/javascript" src="./SsaPlayer.js"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="./index.js"></script>
-	<title>SpriteStudio 公式SsaPlayer</title>
+	<title>SpriteStudio SsaPlayer</title>
 </head>
 
 <body>
@@ -16,6 +13,18 @@
 	<br>
 	<canvas id="a_canvas" width="1280" height="720">
 	</canvas>
+
+	<div>
+		Sprite Studio が提供している SsaPlayerです。<br />
+		頂点変形に対応していません。<br />
+		<br />
+		<form action="">
+			<b>アップロード</b><br />
+			画像: <input type="file" name="file1" onchange="addImage(this)" /><br />
+			JSON: <input type="file" name="file2" onchange="addJSON(this)" /><br />
+			<input type="button" value="描画" onclick="renderSS()">
+		</form>
+	</div>
 <!--
 <section class="demo1">
 <p>
@@ -28,6 +37,9 @@
 	<button value="Exec" onclick="OnButtonClick2();">Next</button>
 </p>
 -->
+	<script type="text/javascript" src="./SsaPlayer.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
 </body>
 
 </html>
